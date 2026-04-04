@@ -1,11 +1,13 @@
 # agent-browser — Claude Code Plugin
 
+by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
+
 Headless browser automation for AI agents. Navigate pages, fill forms, click buttons, take screenshots, scrape data, and run e2e tests — all via Playwright under the hood.
 
 ## Install
 
 ```bash
-claude plugin install SkyWalker2506/ccplugin-agent-browser
+claude plugin install agent-browser@musabkara-claude-marketplace
 ```
 
 ## Prerequisites
@@ -53,4 +55,5 @@ AGENT_BROWSER_MAX_OUTPUT=50000             # Output size limit
 
 ## Part of
 
-[SkyWalker2506/claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code
+- [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (110 agents, local-first routing)
+- [Plugin Marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all 14 plugins
