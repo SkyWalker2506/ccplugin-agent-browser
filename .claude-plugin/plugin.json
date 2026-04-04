@@ -1,0 +1,14 @@
+{
+  "name": "agent-browser",
+  "description": "Headless browser automation for AI agents — navigate, fill forms, click, screenshot, scrape, and run e2e tests via Playwright.",
+  "version": "1.0.0",
+  "author": {
+    "name": "SkyWalker2506",
+    "url": "https://github.com/SkyWalker2506"
+  },
+  "homepage": "https://github.com/SkyWalker2506/ccplugin-agent-browser",
+  "repository": "https://github.com/SkyWalker2506/ccplugin-agent-browser",
+  "license": "MIT",
+  "category": "development",
+  "keywords": ["browser", "automation", "headless", "playwright", "scrape", "screenshot", "testing", "e2e"]
+}
