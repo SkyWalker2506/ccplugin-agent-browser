@@ -4,18 +4,32 @@ by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https:
 
 Headless browser automation for AI agents. Navigate pages, fill forms, click buttons, take screenshots, scrape data, and run e2e tests — all via Playwright under the hood.
 
+## What's in this repo
+
+This is a **Claude Code plugin** — it adds a `/agent-browser` slash command and a skill to Claude Code. It is **not** the `agent-browser` npm package itself.
+
+| Path | What it does |
+|------|-------------|
+| `commands/agent-browser.md` | Slash command `/agent-browser` — full CLI usage instructions |
+| `skills/agent-browser/SKILL.md` | Skill definition for Claude Code |
+| `.claude-plugin/plugin.json` | Plugin metadata |
+
 ## Install
 
-```bash
-claude plugin install agent-browser@musabkara-claude-marketplace
-```
+Clone or copy this repo into your Claude Code plugins directory, or install via the [claude-marketplace](https://github.com/SkyWalker2506/claude-marketplace) once available.
+
+> **Note:** Automated `claude plugin install` via marketplace is not yet available.
 
 ## Prerequisites
+
+The slash command wraps the `agent-browser` CLI. Install it separately:
 
 ```bash
 npm i -g agent-browser
 agent-browser install  # downloads Chromium
 ```
+
+> The `agent-browser` npm package must be installed and on your PATH for the slash command to work.
 
 ## Commands
 
@@ -34,7 +48,7 @@ agent-browser click @e1
 agent-browser screenshot --full
 ```
 
-## What It Does
+## What the slash command supports
 
 - **Navigate** — open URLs, wait for load, handle redirects
 - **Interact** — click, fill forms, select dropdowns, check boxes, press keys
@@ -42,6 +56,8 @@ agent-browser screenshot --full
 - **Capture** — screenshots (viewport/full/annotated), PDF export
 - **Test** — e2e testing workflows with wait conditions and assertions
 - **Auth** — encrypted credential vault, persistent browser profiles
+
+> All of the above depend on the external `agent-browser` npm package being installed.
 
 ## Security
 
@@ -53,7 +69,12 @@ AGENT_BROWSER_ALLOWED_DOMAINS="example.com" # Domain whitelist
 AGENT_BROWSER_MAX_OUTPUT=50000             # Output size limit
 ```
 
+## Roadmap
+
+- [ ] Automated `claude plugin install` via marketplace distribution
+- [ ] Bundle or vendor the `agent-browser` CLI so no separate npm install is needed
+
 ## Part of
 
-- [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (110 agents, local-first routing)
-- [Plugin Marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all 14 plugins
+- [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code
+- [claude-marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all plugins
