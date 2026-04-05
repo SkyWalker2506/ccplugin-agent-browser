@@ -22,7 +22,13 @@ Clone or copy this repo into your Claude Code plugins directory, or install via 
 
 ## Prerequisites
 
-The slash command wraps the `agent-browser` CLI. Install it separately:
+Run the setup script before using the plugin:
+
+```bash
+bash setup.sh
+```
+
+This installs the `agent-browser` npm package globally and downloads Chromium. Alternatively, run the steps manually:
 
 ```bash
 npm i -g agent-browser
