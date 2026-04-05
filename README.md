@@ -16,9 +16,15 @@ This is a **Claude Code plugin** — it adds a `/agent-browser` slash command an
 
 ## Install
 
-Clone or copy this repo into your Claude Code plugins directory, or install via the [claude-marketplace](https://github.com/SkyWalker2506/claude-marketplace) once available.
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/SkyWalker2506/claude-marketplace/main/install.sh) agent-browser
+```
 
-> **Note:** Automated `claude plugin install` via marketplace is not yet available.
+Or via Claude Code native marketplace:
+
+```bash
+claude plugin install agent-browser@musabkara-claude-marketplace
+```
 
 ## Prerequisites
 
