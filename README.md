@@ -89,4 +89,5 @@ AGENT_BROWSER_MAX_OUTPUT=50000             # Output size limit
 ## Part of
 
 - [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code
-- [claude-marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all plugins
+- [claude-marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all 18 plugins
+- [ClaudeHQ](https://github.com/SkyWalker2506/ClaudeHQ) — Claude ecosystem HQ
