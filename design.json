@@ -1,0 +1,49 @@
+{
+  "cds_version": "1.0",
+  "name": "ccplugin-agent-browser",
+  "type": "plugin",
+  "input_patterns": [
+    {
+      "type": "slash_command",
+      "commands": [
+        "/browse-open",
+        "/browse-click",
+        "/browse-fill",
+        "/browse-screenshot"
+      ],
+      "args_schema": {
+        "url": "string",
+        "selector": "string?"
+      }
+    },
+    {
+      "type": "machine_api",
+      "description": "CLI: agent-browser open/click/fill/screenshot"
+    }
+  ],
+  "output_patterns": [
+    {
+      "type": "terminal_text",
+      "max_lines": 20
+    },
+    {
+      "type": "file_generation",
+      "path": "screenshots/*.png"
+    }
+  ],
+  "lifecycle": {
+    "preflight": {
+      "required_tools": [
+        "playwright"
+      ],
+      "required_secrets": [],
+      "required_mcp": [
+        "playwright"
+      ]
+    }
+  },
+  "error_handling": {
+    "retry_network": true,
+    "max_retries": 2
+  }
+}
