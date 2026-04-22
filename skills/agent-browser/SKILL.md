@@ -43,6 +43,8 @@ echo "$PASS" | agent-browser auth save myapp --url https://app.com/login --usern
 agent-browser auth login myapp
 ```
 
+> **Security:** Always pass passwords via `--password-stdin` (pipe from env var). Never pass a password as a CLI argument — it will be visible in shell history and process listings.
+
 **Persistent profile:**
 ```bash
 agent-browser --profile ~/.myapp open https://app.com/login

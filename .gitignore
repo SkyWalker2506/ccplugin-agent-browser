@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Forge / analysis artifacts
+forge/
+analysis/
+.jira-state/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
