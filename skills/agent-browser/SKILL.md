@@ -7,7 +7,8 @@ version: 1.0.0
 
 # Browser Automation — agent-browser
 
-Install: `npm i -g agent-browser` then `agent-browser install` (downloads Chromium).
+Install: `npm i -g agent-browser` then `agent-browser install` (downloads Chromium).  
+Full slash-command reference: see `commands/agent-browser.md` or use `/agent-browser`.
 
 ## Core Workflow
 
