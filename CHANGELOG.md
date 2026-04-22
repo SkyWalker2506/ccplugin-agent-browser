@@ -7,6 +7,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.0.2] — 2026-04-22
+
+### Fixed
+- `commands/agent-browser.md`: `allowed-tools` converted from JSON inline array to proper YAML sequence format
+- `SKILL.md`: Added cross-link to `commands/agent-browser.md` for discoverability
+
 ## [1.0.1] — 2026-04-22
 
 ### Added

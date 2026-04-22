@@ -1,6 +1,10 @@
 ---
 description: Headless browser automation — navigate pages, fill forms, click buttons, take screenshots, scrape data, and run e2e tests
-allowed-tools: [Bash(npx agent-browser:*), Bash(agent-browser:*), Bash, Read]
+allowed-tools:
+  - Bash(npx agent-browser:*)
+  - Bash(agent-browser:*)
+  - Bash
+  - Read
 ---
 
 # Browser Automation CLI
