@@ -1,5 +1,9 @@
 # agent-browser — Claude Code Plugin
 
+![version](https://img.shields.io/badge/version-1.0.0-blue)
+![license](https://img.shields.io/badge/license-MIT-green)
+![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)
+
 by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
 
 Headless browser automation for AI agents. Navigate pages, fill forms, click buttons, take screenshots, scrape data, and run e2e tests — all via Playwright under the hood.
@@ -79,6 +83,13 @@ Environment variables for AI agent safety:
 AGENT_BROWSER_CONTENT_BOUNDARIES=1         # Mark page content
 AGENT_BROWSER_ALLOWED_DOMAINS="example.com" # Domain whitelist
 AGENT_BROWSER_MAX_OUTPUT=50000             # Output size limit
+```
+
+## Uninstall
+
+```bash
+npm uninstall -g agent-browser
+claude plugin uninstall agent-browser   # removes skill + command from Claude Code
 ```
 
 ## Roadmap
