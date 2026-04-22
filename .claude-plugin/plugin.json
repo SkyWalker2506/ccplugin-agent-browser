@@ -10,5 +10,6 @@
   "repository": "https://github.com/SkyWalker2506/ccplugin-agent-browser",
   "license": "MIT",
   "category": "development",
-  "keywords": ["browser", "automation", "headless", "playwright", "scrape", "screenshot", "testing", "e2e"]
+  "keywords": ["browser", "automation", "headless", "playwright", "scrape", "screenshot", "testing", "e2e"],
+  "install": "bash setup.sh"
 }
